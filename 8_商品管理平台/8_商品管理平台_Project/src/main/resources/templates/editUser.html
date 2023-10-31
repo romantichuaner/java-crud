@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"><!--命名空间 -->
+<head>
+    <meta charset="UTF-8">
+    <title>修改商品信息</title>  <!--引入表格的样式 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+</head>
+<body>
+<div class="ui container"> <!--把ui放在容器里-->  <!--post方法提交表单，对象是user，会走/edit这个路径 -->
+    <form class="ui form" th:action="@{/edit}" method="post" th:object="${user}">
+        <input type="hidden" th:value="*{id}" name="id">
+        <div class="field">
+            <label>商品名</label>
+            <input type="text" name="name" placeholder="请输入商品名" required th:value="*{name}">
+        </div>
+        <div class="field">
+            <label>商品入库时间</label>
+            <input type="text" name="password" placeholder="请输入商品入库时间" required th:value="*{password}">
+        </div>
+        <button class="ui button" type="submit">提交</button> <!--把form表单的数据提交给后端-->
+    </form>
+    <div class="ui success  message" th:unless="${#strings.isEmpty(message)}">
+        <i class="close icon"></i>
+        <div class="header">提示：</div>
+        <p th:text="${message}"></p>
+    </div>
+</div>
+<script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+<script>
+    $(".message .close").on('click',function () {
+        $(this).closest(".message")
+            .transition("fade");
+    })
+</script>
+</body>
+</html>

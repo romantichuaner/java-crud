@@ -1,0 +1,175 @@
+2023-06-20 00:01:32.281  WARN 14856 --- [http-nio-8080-exec-4] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/itcast?useUnicode=true&characterEncoding=utf-8&serverTimezone=GMT, version : 1.2.4, lastPacketReceivedIdleMillis : 538249
+2023-06-20 00:01:32.292 DEBUG 14856 --- [http-nio-8080-exec-4] wuhobin.dao.goodsUserDao.listUserByName  : ==>  Preparing: select * from itcast.goodsuser
+2023-06-20 00:01:32.292 DEBUG 14856 --- [http-nio-8080-exec-4] wuhobin.dao.goodsUserDao.listUserByName  : ==> Parameters: 
+2023-06-20 00:01:32.293 DEBUG 14856 --- [http-nio-8080-exec-4] wuhobin.dao.goodsUserDao.listUserByName  : <==      Total: 2
+2023-06-20 00:01:40.932 DEBUG 14856 --- [http-nio-8080-exec-5] wuhobin.dao.UserDao.listUserByName       : ==>  Preparing: select * from itcast.user
+2023-06-20 00:01:40.933 DEBUG 14856 --- [http-nio-8080-exec-5] wuhobin.dao.UserDao.listUserByName       : ==> Parameters: 
+2023-06-20 00:01:40.935 DEBUG 14856 --- [http-nio-8080-exec-5] wuhobin.dao.UserDao.listUserByName       : <==      Total: 4
+2023-06-20 00:01:52.481 DEBUG 14856 --- [http-nio-8080-exec-6] wuhobin.dao.UserDao.queryUserById        : ==>  Preparing: select * from itcast.user where id=?
+2023-06-20 00:01:52.481 DEBUG 14856 --- [http-nio-8080-exec-6] wuhobin.dao.UserDao.queryUserById        : ==> Parameters: 22(Integer)
+2023-06-20 00:01:52.482 DEBUG 14856 --- [http-nio-8080-exec-6] wuhobin.dao.UserDao.queryUserById        : <==      Total: 1
+2023-06-20 00:01:59.801 DEBUG 14856 --- [http-nio-8080-exec-7] wuhobin.dao.UserDao.updateUser           : ==>  Preparing: update itcast.user set name = ?,password = ? where id = ?
+2023-06-20 00:01:59.801 DEBUG 14856 --- [http-nio-8080-exec-7] wuhobin.dao.UserDao.updateUser           : ==> Parameters: 耳机(String), 2023-6-19(String), 22(Integer)
+2023-06-20 00:01:59.804 DEBUG 14856 --- [http-nio-8080-exec-7] wuhobin.dao.UserDao.updateUser           : <==    Updates: 1
+2023-06-20 00:01:59.807 DEBUG 14856 --- [http-nio-8080-exec-8] wuhobin.dao.UserDao.listUserByName       : ==>  Preparing: select * from itcast.user
+2023-06-20 00:01:59.808 DEBUG 14856 --- [http-nio-8080-exec-8] wuhobin.dao.UserDao.listUserByName       : ==> Parameters: 
+2023-06-20 00:01:59.808 DEBUG 14856 --- [http-nio-8080-exec-8] wuhobin.dao.UserDao.listUserByName       : <==      Total: 4
+2023-06-20 00:02:25.581 DEBUG 14856 --- [http-nio-8080-exec-10] wuhobin.dao.UserDao.updateUser           : ==>  Preparing: update itcast.user set name = ?,password = ? where id = ?
+2023-06-20 00:02:25.581 DEBUG 14856 --- [http-nio-8080-exec-10] wuhobin.dao.UserDao.updateUser           : ==> Parameters: 耳机(String), 2023-6-19(String), 0(Integer)
+2023-06-20 00:02:25.582 DEBUG 14856 --- [http-nio-8080-exec-10] wuhobin.dao.UserDao.updateUser           : <==    Updates: 0
+2023-06-20 00:02:25.582 DEBUG 14856 --- [http-nio-8080-exec-10] wuhobin.dao.UserDao.addUser              : ==>  Preparing: insert into itcast.user(name, password) values (?,?)
+2023-06-20 00:02:25.583 DEBUG 14856 --- [http-nio-8080-exec-10] wuhobin.dao.UserDao.addUser              : ==> Parameters: 耳机(String), 2023-6-19(String)
+2023-06-20 00:02:25.585 DEBUG 14856 --- [http-nio-8080-exec-10] wuhobin.dao.UserDao.addUser              : <==    Updates: 1
+2023-06-20 00:02:25.588 DEBUG 14856 --- [http-nio-8080-exec-1] wuhobin.dao.UserDao.listUserByName       : ==>  Preparing: select * from itcast.user
+2023-06-20 00:02:25.588 DEBUG 14856 --- [http-nio-8080-exec-1] wuhobin.dao.UserDao.listUserByName       : ==> Parameters: 
+2023-06-20 00:02:25.589 DEBUG 14856 --- [http-nio-8080-exec-1] wuhobin.dao.UserDao.listUserByName       : <==      Total: 5
+2023-06-20 00:02:31.810 DEBUG 14856 --- [http-nio-8080-exec-2] wuhobin.dao.UserDao.deleteUserById       : ==>  Preparing: delete from itcast.user where id=?
+2023-06-20 00:02:31.810 DEBUG 14856 --- [http-nio-8080-exec-2] wuhobin.dao.UserDao.deleteUserById       : ==> Parameters: 22(Integer)
+2023-06-20 00:02:31.812 DEBUG 14856 --- [http-nio-8080-exec-2] wuhobin.dao.UserDao.deleteUserById       : <==    Updates: 1
+2023-06-20 00:02:31.816 DEBUG 14856 --- [http-nio-8080-exec-3] wuhobin.dao.UserDao.listUserByName       : ==>  Preparing: select * from itcast.user
+2023-06-20 00:02:31.816 DEBUG 14856 --- [http-nio-8080-exec-3] wuhobin.dao.UserDao.listUserByName       : ==> Parameters: 
+2023-06-20 00:02:31.817 DEBUG 14856 --- [http-nio-8080-exec-3] wuhobin.dao.UserDao.listUserByName       : <==      Total: 4
+2023-06-20 00:05:53.497  INFO 14856 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2023-06-20 00:05:53.498  INFO 14856 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2023-06-20 00:05:53.500  INFO 14856 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2023-06-20 00:06:14.300  INFO 21884 --- [restartedMain] wuhobin.SpringbootMybatisApplication     : Starting SpringbootMybatisApplication using Java 20.0.1 on 小船儿的宇宙飞船 with PID 21884 (D:\java\IntelliJ IDEA 2023.1.2\javaProject\Demo\target\classes started by 小船船 in D:\java\IntelliJ IDEA 2023.1.2\javaProject\Demo)
+2023-06-20 00:06:14.302 DEBUG 21884 --- [restartedMain] wuhobin.SpringbootMybatisApplication     : Running with Spring Boot v2.4.3, Spring v5.3.4
+2023-06-20 00:06:14.302  INFO 21884 --- [restartedMain] wuhobin.SpringbootMybatisApplication     : No active profile set, falling back to default profiles: default
+2023-06-20 00:06:14.336  INFO 21884 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-06-20 00:06:14.337  INFO 21884 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-06-20 00:06:14.964  INFO 21884 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-06-20 00:06:14.970  INFO 21884 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-06-20 00:06:14.971  INFO 21884 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.43]
+2023-06-20 00:06:15.015  INFO 21884 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-06-20 00:06:15.015  INFO 21884 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 678 ms
+2023-06-20 00:06:15.306  INFO 21884 --- [restartedMain] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-06-20 00:06:15.352  INFO 21884 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2023-06-20 00:06:15.440  INFO 21884 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2023-06-20 00:06:15.482  INFO 21884 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-06-20 00:06:15.489  INFO 21884 --- [restartedMain] wuhobin.SpringbootMybatisApplication     : Started SpringbootMybatisApplication in 1.489 seconds (JVM running for 1.945)
+2023-06-20 00:06:25.796  INFO 21884 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-20 00:06:25.796  INFO 21884 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-06-20 00:06:25.797  INFO 21884 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-06-20 00:06:25.867  INFO 21884 --- [http-nio-8080-exec-1] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2023-06-20 00:06:26.060 DEBUG 21884 --- [http-nio-8080-exec-1] wuhobin.dao.goodsUserDao.listUserByName  : ==>  Preparing: select * from itcast.goodsuser
+2023-06-20 00:06:26.074 DEBUG 21884 --- [http-nio-8080-exec-1] wuhobin.dao.goodsUserDao.listUserByName  : ==> Parameters: 
+2023-06-20 00:06:26.088 DEBUG 21884 --- [http-nio-8080-exec-1] wuhobin.dao.goodsUserDao.listUserByName  : <==      Total: 2
+2023-06-20 00:06:40.509 DEBUG 21884 --- [http-nio-8080-exec-3] wuhobin.dao.goodsUserDao.updateUser      : ==>  Preparing: update itcast.goodsuser set name = ?,password = ? where id = ?
+2023-06-20 00:06:40.511 DEBUG 21884 --- [http-nio-8080-exec-3] wuhobin.dao.goodsUserDao.updateUser      : ==> Parameters: 荣耀(String), 2023-6-19(String), 0(Integer)
+2023-06-20 00:06:40.512 DEBUG 21884 --- [http-nio-8080-exec-3] wuhobin.dao.goodsUserDao.updateUser      : <==    Updates: 0
+2023-06-20 00:06:40.513 DEBUG 21884 --- [http-nio-8080-exec-3] wuhobin.dao.goodsUserDao.addUser         : ==>  Preparing: insert into itcast.goodsuser(name, password) values (?,?)
+2023-06-20 00:06:40.513 DEBUG 21884 --- [http-nio-8080-exec-3] wuhobin.dao.goodsUserDao.addUser         : ==> Parameters: 荣耀(String), 2023-6-19(String)
+2023-06-20 00:06:40.516 DEBUG 21884 --- [http-nio-8080-exec-3] wuhobin.dao.goodsUserDao.addUser         : <==    Updates: 1
+2023-06-20 00:06:40.525 DEBUG 21884 --- [http-nio-8080-exec-4] wuhobin.dao.UserDao.listUserByName       : ==>  Preparing: select * from itcast.user
+2023-06-20 00:06:40.525 DEBUG 21884 --- [http-nio-8080-exec-4] wuhobin.dao.UserDao.listUserByName       : ==> Parameters: 
+2023-06-20 00:06:40.526 DEBUG 21884 --- [http-nio-8080-exec-4] wuhobin.dao.UserDao.listUserByName       : <==      Total: 4
+2023-06-20 00:06:47.433 DEBUG 21884 --- [http-nio-8080-exec-5] wuhobin.dao.goodsUserDao.listUserByName  : ==>  Preparing: select * from itcast.goodsuser
+2023-06-20 00:06:47.434 DEBUG 21884 --- [http-nio-8080-exec-5] wuhobin.dao.goodsUserDao.listUserByName  : ==> Parameters: 
+2023-06-20 00:06:47.435 DEBUG 21884 --- [http-nio-8080-exec-5] wuhobin.dao.goodsUserDao.listUserByName  : <==      Total: 3
+2023-06-20 00:06:50.476 DEBUG 21884 --- [http-nio-8080-exec-6] wuhobin.dao.goodsUserDao.listUserByName  : ==>  Preparing: select * from itcast.goodsuser
+2023-06-20 00:06:50.477 DEBUG 21884 --- [http-nio-8080-exec-6] wuhobin.dao.goodsUserDao.listUserByName  : ==> Parameters: 
+2023-06-20 00:06:50.478 DEBUG 21884 --- [http-nio-8080-exec-6] wuhobin.dao.goodsUserDao.listUserByName  : <==      Total: 3
+2023-06-20 00:10:55.825  WARN 21884 --- [http-nio-8080-exec-1] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/itcast?useUnicode=true&characterEncoding=utf-8&serverTimezone=GMT, version : 1.2.4, lastPacketReceivedIdleMillis : 245340
+2023-06-20 00:10:55.840 DEBUG 21884 --- [http-nio-8080-exec-1] wuhobin.dao.goodsUserDao.updateUser      : ==>  Preparing: update itcast.goodsuser set name = ?,password = ? where id = ?
+2023-06-20 00:10:55.841 DEBUG 21884 --- [http-nio-8080-exec-1] wuhobin.dao.goodsUserDao.updateUser      : ==> Parameters: 小米(String), 2023-6-19(String), 0(Integer)
+2023-06-20 00:10:55.843 DEBUG 21884 --- [http-nio-8080-exec-1] wuhobin.dao.goodsUserDao.updateUser      : <==    Updates: 0
+2023-06-20 00:10:55.843 DEBUG 21884 --- [http-nio-8080-exec-1] wuhobin.dao.goodsUserDao.addUser         : ==>  Preparing: insert into itcast.goodsuser(name, password) values (?,?)
+2023-06-20 00:10:55.843 DEBUG 21884 --- [http-nio-8080-exec-1] wuhobin.dao.goodsUserDao.addUser         : ==> Parameters: 小米(String), 2023-6-19(String)
+2023-06-20 00:10:55.846 DEBUG 21884 --- [http-nio-8080-exec-1] wuhobin.dao.goodsUserDao.addUser         : <==    Updates: 1
+2023-06-20 00:10:55.850 DEBUG 21884 --- [http-nio-8080-exec-2] wuhobin.dao.UserDao.listUserByName       : ==>  Preparing: select * from itcast.user
+2023-06-20 00:10:55.850 DEBUG 21884 --- [http-nio-8080-exec-2] wuhobin.dao.UserDao.listUserByName       : ==> Parameters: 
+2023-06-20 00:10:55.852 DEBUG 21884 --- [http-nio-8080-exec-2] wuhobin.dao.UserDao.listUserByName       : <==      Total: 4
+2023-06-20 00:11:01.395 DEBUG 21884 --- [http-nio-8080-exec-3] wuhobin.dao.goodsUserDao.listUserByName  : ==>  Preparing: select * from itcast.goodsuser
+2023-06-20 00:11:01.395 DEBUG 21884 --- [http-nio-8080-exec-3] wuhobin.dao.goodsUserDao.listUserByName  : ==> Parameters: 
+2023-06-20 00:11:01.396 DEBUG 21884 --- [http-nio-8080-exec-3] wuhobin.dao.goodsUserDao.listUserByName  : <==      Total: 4
+2023-06-20 00:12:23.139  WARN 21884 --- [http-nio-8080-exec-6] c.a.druid.pool.DruidAbstractDataSource   : discard long time none received connection. , jdbcUrl : jdbc:mysql://localhost:3306/itcast?useUnicode=true&characterEncoding=utf-8&serverTimezone=GMT, version : 1.2.4, lastPacketReceivedIdleMillis : 81742
+2023-06-20 00:12:23.160 DEBUG 21884 --- [http-nio-8080-exec-6] wuhobin.dao.UserDao.listUserByName       : ==>  Preparing: select * from itcast.user
+2023-06-20 00:12:23.161 DEBUG 21884 --- [http-nio-8080-exec-6] wuhobin.dao.UserDao.listUserByName       : ==> Parameters: 
+2023-06-20 00:12:23.163 DEBUG 21884 --- [http-nio-8080-exec-6] wuhobin.dao.UserDao.listUserByName       : <==      Total: 4
+2023-06-20 00:12:34.941 DEBUG 21884 --- [http-nio-8080-exec-8] wuhobin.dao.UserDao.listUserByName       : ==>  Preparing: select * from itcast.user WHERE `name` like concat('%',?,'%')
+2023-06-20 00:12:34.941 DEBUG 21884 --- [http-nio-8080-exec-8] wuhobin.dao.UserDao.listUserByName       : ==> Parameters: 电脑(String)
+2023-06-20 00:12:34.943 DEBUG 21884 --- [http-nio-8080-exec-8] wuhobin.dao.UserDao.listUserByName       : <==      Total: 2
+2023-06-20 00:12:40.156 DEBUG 21884 --- [http-nio-8080-exec-9] wuhobin.dao.UserDao.listUserByName       : ==>  Preparing: select * from itcast.user
+2023-06-20 00:12:40.156 DEBUG 21884 --- [http-nio-8080-exec-9] wuhobin.dao.UserDao.listUserByName       : ==> Parameters: 
+2023-06-20 00:12:40.158 DEBUG 21884 --- [http-nio-8080-exec-9] wuhobin.dao.UserDao.listUserByName       : <==      Total: 4
+2023-06-20 00:12:41.617 DEBUG 21884 --- [http-nio-8080-exec-10] wuhobin.dao.UserDao.listUserByName       : ==>  Preparing: select * from itcast.user
+2023-06-20 00:12:41.618 DEBUG 21884 --- [http-nio-8080-exec-10] wuhobin.dao.UserDao.listUserByName       : ==> Parameters: 
+2023-06-20 00:12:41.620 DEBUG 21884 --- [http-nio-8080-exec-10] wuhobin.dao.UserDao.listUserByName       : <==      Total: 4
+2023-06-20 00:12:50.766 DEBUG 21884 --- [http-nio-8080-exec-1] wuhobin.dao.UserDao.deleteUserById       : ==>  Preparing: delete from itcast.user where id=?
+2023-06-20 00:12:50.767 DEBUG 21884 --- [http-nio-8080-exec-1] wuhobin.dao.UserDao.deleteUserById       : ==> Parameters: 31(Integer)
+2023-06-20 00:12:50.771 DEBUG 21884 --- [http-nio-8080-exec-1] wuhobin.dao.UserDao.deleteUserById       : <==    Updates: 1
+2023-06-20 00:12:50.808 DEBUG 21884 --- [http-nio-8080-exec-2] wuhobin.dao.UserDao.listUserByName       : ==>  Preparing: select * from itcast.user
+2023-06-20 00:12:50.809 DEBUG 21884 --- [http-nio-8080-exec-2] wuhobin.dao.UserDao.listUserByName       : ==> Parameters: 
+2023-06-20 00:12:50.811 DEBUG 21884 --- [http-nio-8080-exec-2] wuhobin.dao.UserDao.listUserByName       : <==      Total: 3
+2023-06-20 00:12:55.605 DEBUG 21884 --- [http-nio-8080-exec-3] wuhobin.dao.UserDao.queryUserById        : ==>  Preparing: select * from itcast.user where id=?
+2023-06-20 00:12:55.606 DEBUG 21884 --- [http-nio-8080-exec-3] wuhobin.dao.UserDao.queryUserById        : ==> Parameters: 32(Integer)
+2023-06-20 00:12:55.608 DEBUG 21884 --- [http-nio-8080-exec-3] wuhobin.dao.UserDao.queryUserById        : <==      Total: 1
+2023-06-20 00:13:01.280 DEBUG 21884 --- [http-nio-8080-exec-4] wuhobin.dao.UserDao.updateUser           : ==>  Preparing: update itcast.user set name = ?,password = ? where id = ?
+2023-06-20 00:13:01.281 DEBUG 21884 --- [http-nio-8080-exec-4] wuhobin.dao.UserDao.updateUser           : ==> Parameters: 手机(String), 2023-6-19(String), 32(Integer)
+2023-06-20 00:13:01.285 DEBUG 21884 --- [http-nio-8080-exec-4] wuhobin.dao.UserDao.updateUser           : <==    Updates: 1
+2023-06-20 00:13:01.290 DEBUG 21884 --- [http-nio-8080-exec-5] wuhobin.dao.UserDao.listUserByName       : ==>  Preparing: select * from itcast.user
+2023-06-20 00:13:01.291 DEBUG 21884 --- [http-nio-8080-exec-5] wuhobin.dao.UserDao.listUserByName       : ==> Parameters: 
+2023-06-20 00:13:01.293 DEBUG 21884 --- [http-nio-8080-exec-5] wuhobin.dao.UserDao.listUserByName       : <==      Total: 3
+2023-06-20 00:13:24.780 DEBUG 21884 --- [http-nio-8080-exec-8] wuhobin.dao.UserDao.updateUser           : ==>  Preparing: update itcast.user set name = ?,password = ? where id = ?
+2023-06-20 00:13:24.781 DEBUG 21884 --- [http-nio-8080-exec-8] wuhobin.dao.UserDao.updateUser           : ==> Parameters: 冰箱(String), 2023-6-19(String), 0(Integer)
+2023-06-20 00:13:24.783 DEBUG 21884 --- [http-nio-8080-exec-8] wuhobin.dao.UserDao.updateUser           : <==    Updates: 0
+2023-06-20 00:13:24.784 DEBUG 21884 --- [http-nio-8080-exec-8] wuhobin.dao.UserDao.addUser              : ==>  Preparing: insert into itcast.user(name, password) values (?,?)
+2023-06-20 00:13:24.785 DEBUG 21884 --- [http-nio-8080-exec-8] wuhobin.dao.UserDao.addUser              : ==> Parameters: 冰箱(String), 2023-6-19(String)
+2023-06-20 00:13:24.787 DEBUG 21884 --- [http-nio-8080-exec-8] wuhobin.dao.UserDao.addUser              : <==    Updates: 1
+2023-06-20 00:13:24.793 DEBUG 21884 --- [http-nio-8080-exec-9] wuhobin.dao.UserDao.listUserByName       : ==>  Preparing: select * from itcast.user
+2023-06-20 00:13:24.794 DEBUG 21884 --- [http-nio-8080-exec-9] wuhobin.dao.UserDao.listUserByName       : ==> Parameters: 
+2023-06-20 00:13:24.804 DEBUG 21884 --- [http-nio-8080-exec-9] wuhobin.dao.UserDao.listUserByName       : <==      Total: 4
+2023-06-20 00:13:33.394 DEBUG 21884 --- [http-nio-8080-exec-10] wuhobin.dao.goodsUserDao.listUserByName  : ==>  Preparing: select * from itcast.goodsuser
+2023-06-20 00:13:33.395 DEBUG 21884 --- [http-nio-8080-exec-10] wuhobin.dao.goodsUserDao.listUserByName  : ==> Parameters: 
+2023-06-20 00:13:33.398 DEBUG 21884 --- [http-nio-8080-exec-10] wuhobin.dao.goodsUserDao.listUserByName  : <==      Total: 4
+2023-06-20 00:13:40.334 DEBUG 21884 --- [http-nio-8080-exec-1] wuhobin.dao.goodsUserDao.deleteUserById  : ==>  Preparing: delete from itcast.goodsuser where id=?
+2023-06-20 00:13:40.335 DEBUG 21884 --- [http-nio-8080-exec-1] wuhobin.dao.goodsUserDao.deleteUserById  : ==> Parameters: 18(Integer)
+2023-06-20 00:13:40.337 DEBUG 21884 --- [http-nio-8080-exec-1] wuhobin.dao.goodsUserDao.deleteUserById  : <==    Updates: 1
+2023-06-20 00:13:40.344 DEBUG 21884 --- [http-nio-8080-exec-2] wuhobin.dao.UserDao.listUserByName       : ==>  Preparing: select * from itcast.user
+2023-06-20 00:13:40.344 DEBUG 21884 --- [http-nio-8080-exec-2] wuhobin.dao.UserDao.listUserByName       : ==> Parameters: 
+2023-06-20 00:13:40.346 DEBUG 21884 --- [http-nio-8080-exec-2] wuhobin.dao.UserDao.listUserByName       : <==      Total: 4
+2023-06-20 00:13:46.736 DEBUG 21884 --- [http-nio-8080-exec-3] wuhobin.dao.goodsUserDao.listUserByName  : ==>  Preparing: select * from itcast.goodsuser
+2023-06-20 00:13:46.737 DEBUG 21884 --- [http-nio-8080-exec-3] wuhobin.dao.goodsUserDao.listUserByName  : ==> Parameters: 
+2023-06-20 00:13:46.739 DEBUG 21884 --- [http-nio-8080-exec-3] wuhobin.dao.goodsUserDao.listUserByName  : <==      Total: 3
+2023-06-20 00:13:49.901 DEBUG 21884 --- [http-nio-8080-exec-4] wuhobin.dao.goodsUserDao.listUserByName  : ==>  Preparing: select * from itcast.goodsuser
+2023-06-20 00:13:49.901 DEBUG 21884 --- [http-nio-8080-exec-4] wuhobin.dao.goodsUserDao.listUserByName  : ==> Parameters: 
+2023-06-20 00:13:49.903 DEBUG 21884 --- [http-nio-8080-exec-4] wuhobin.dao.goodsUserDao.listUserByName  : <==      Total: 3
+2023-06-20 00:13:56.441 DEBUG 21884 --- [http-nio-8080-exec-5] wuhobin.dao.goodsUserDao.listUserByName  : ==>  Preparing: select * from itcast.goodsuser WHERE `name` like concat('%',?,'%')
+2023-06-20 00:13:56.441 DEBUG 21884 --- [http-nio-8080-exec-5] wuhobin.dao.goodsUserDao.listUserByName  : ==> Parameters: 华为(String)
+2023-06-20 00:13:56.443 DEBUG 21884 --- [http-nio-8080-exec-5] wuhobin.dao.goodsUserDao.listUserByName  : <==      Total: 1
+2023-06-20 00:13:58.262 DEBUG 21884 --- [http-nio-8080-exec-6] wuhobin.dao.goodsUserDao.listUserByName  : ==>  Preparing: select * from itcast.goodsuser
+2023-06-20 00:13:58.263 DEBUG 21884 --- [http-nio-8080-exec-6] wuhobin.dao.goodsUserDao.listUserByName  : ==> Parameters: 
+2023-06-20 00:13:58.265 DEBUG 21884 --- [http-nio-8080-exec-6] wuhobin.dao.goodsUserDao.listUserByName  : <==      Total: 3
+2023-06-20 00:14:00.152 DEBUG 21884 --- [http-nio-8080-exec-7] wuhobin.dao.goodsUserDao.listUserByName  : ==>  Preparing: select * from itcast.goodsuser
+2023-06-20 00:14:00.152 DEBUG 21884 --- [http-nio-8080-exec-7] wuhobin.dao.goodsUserDao.listUserByName  : ==> Parameters: 
+2023-06-20 00:14:00.154 DEBUG 21884 --- [http-nio-8080-exec-7] wuhobin.dao.goodsUserDao.listUserByName  : <==      Total: 3
+2023-06-20 00:14:04.779 DEBUG 21884 --- [http-nio-8080-exec-8] wuhobin.dao.goodsUserDao.queryUserById   : ==>  Preparing: select * from itcast.goodsuser where id=?
+2023-06-20 00:14:04.780 DEBUG 21884 --- [http-nio-8080-exec-8] wuhobin.dao.goodsUserDao.queryUserById   : ==> Parameters: 17(Integer)
+2023-06-20 00:14:04.781 DEBUG 21884 --- [http-nio-8080-exec-8] wuhobin.dao.goodsUserDao.queryUserById   : <==      Total: 1
+2023-06-20 00:14:12.656 DEBUG 21884 --- [http-nio-8080-exec-9] wuhobin.dao.goodsUserDao.updateUser      : ==>  Preparing: update itcast.goodsuser set name = ?,password = ? where id = ?
+2023-06-20 00:14:12.657 DEBUG 21884 --- [http-nio-8080-exec-9] wuhobin.dao.goodsUserDao.updateUser      : ==> Parameters: 小米(String), 2023-6-19(String), 17(Integer)
+2023-06-20 00:14:12.660 DEBUG 21884 --- [http-nio-8080-exec-9] wuhobin.dao.goodsUserDao.updateUser      : <==    Updates: 1
+2023-06-20 00:14:12.664 DEBUG 21884 --- [http-nio-8080-exec-10] wuhobin.dao.UserDao.listUserByName       : ==>  Preparing: select * from itcast.user
+2023-06-20 00:14:12.664 DEBUG 21884 --- [http-nio-8080-exec-10] wuhobin.dao.UserDao.listUserByName       : ==> Parameters: 
+2023-06-20 00:14:12.666 DEBUG 21884 --- [http-nio-8080-exec-10] wuhobin.dao.UserDao.listUserByName       : <==      Total: 4
+2023-06-20 00:14:17.582 DEBUG 21884 --- [http-nio-8080-exec-1] wuhobin.dao.goodsUserDao.listUserByName  : ==>  Preparing: select * from itcast.goodsuser
+2023-06-20 00:14:17.583 DEBUG 21884 --- [http-nio-8080-exec-1] wuhobin.dao.goodsUserDao.listUserByName  : ==> Parameters: 
+2023-06-20 00:14:17.585 DEBUG 21884 --- [http-nio-8080-exec-1] wuhobin.dao.goodsUserDao.listUserByName  : <==      Total: 3
+2023-06-20 00:14:34.180 DEBUG 21884 --- [http-nio-8080-exec-4] wuhobin.dao.goodsUserDao.updateUser      : ==>  Preparing: update itcast.goodsuser set name = ?,password = ? where id = ?
+2023-06-20 00:14:34.180 DEBUG 21884 --- [http-nio-8080-exec-4] wuhobin.dao.goodsUserDao.updateUser      : ==> Parameters: 荣耀(String), 2023-6-19(String), 0(Integer)
+2023-06-20 00:14:34.182 DEBUG 21884 --- [http-nio-8080-exec-4] wuhobin.dao.goodsUserDao.updateUser      : <==    Updates: 0
+2023-06-20 00:14:34.183 DEBUG 21884 --- [http-nio-8080-exec-4] wuhobin.dao.goodsUserDao.addUser         : ==>  Preparing: insert into itcast.goodsuser(name, password) values (?,?)
+2023-06-20 00:14:34.183 DEBUG 21884 --- [http-nio-8080-exec-4] wuhobin.dao.goodsUserDao.addUser         : ==> Parameters: 荣耀(String), 2023-6-19(String)
+2023-06-20 00:14:34.186 DEBUG 21884 --- [http-nio-8080-exec-4] wuhobin.dao.goodsUserDao.addUser         : <==    Updates: 1
+2023-06-20 00:14:34.191 DEBUG 21884 --- [http-nio-8080-exec-5] wuhobin.dao.UserDao.listUserByName       : ==>  Preparing: select * from itcast.user
+2023-06-20 00:14:34.192 DEBUG 21884 --- [http-nio-8080-exec-5] wuhobin.dao.UserDao.listUserByName       : ==> Parameters: 
+2023-06-20 00:14:34.193 DEBUG 21884 --- [http-nio-8080-exec-5] wuhobin.dao.UserDao.listUserByName       : <==      Total: 4
+2023-06-20 00:14:40.214 DEBUG 21884 --- [http-nio-8080-exec-6] wuhobin.dao.goodsUserDao.listUserByName  : ==>  Preparing: select * from itcast.goodsuser
+2023-06-20 00:14:40.214 DEBUG 21884 --- [http-nio-8080-exec-6] wuhobin.dao.goodsUserDao.listUserByName  : ==> Parameters: 
+2023-06-20 00:14:40.216 DEBUG 21884 --- [http-nio-8080-exec-6] wuhobin.dao.goodsUserDao.listUserByName  : <==      Total: 4
+2023-06-20 00:14:45.599 DEBUG 21884 --- [http-nio-8080-exec-7] wuhobin.dao.goodsUserDao.listUserByName  : ==>  Preparing: select * from itcast.goodsuser
+2023-06-20 00:14:45.600 DEBUG 21884 --- [http-nio-8080-exec-7] wuhobin.dao.goodsUserDao.listUserByName  : ==> Parameters: 
+2023-06-20 00:14:45.601 DEBUG 21884 --- [http-nio-8080-exec-7] wuhobin.dao.goodsUserDao.listUserByName  : <==      Total: 4
+2023-06-20 08:21:50.819  INFO 21884 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2023-06-20 08:21:50.822  INFO 21884 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2023-06-20 08:21:50.823  INFO 21884 --- [SpringContextShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed

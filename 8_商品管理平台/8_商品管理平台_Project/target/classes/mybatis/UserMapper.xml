@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--
+xml文件是用来编写mysql语句的，namespace是用来挂载dao层下的接口的
+因为dao层下的UserDao有注解，所以这里可以找到接口
+-->
+<mapper namespace="wuhobin.dao.UserDao">
+    <!--查询所有商品，id对应着UserDao下的listUser方法,返回的是User-->
+    <select id="listUser" resultType="wuhobin.pojo.User">
+        select *
+        from itcast.user;
+    </select>
+    <!--根据商品名查询，id对应着UserDao下的listUser方法listUserByName，
+    参数类型是查询类query下UserQuery类对象，返回值是User
+    -->
+    <select id="listUserByName" parameterType="wuhobin.pojo.query.UserQuery" resultType="wuhobin.pojo.User">
+        select *
+        from itcast.user
+        <where>
+            <if test="name != null and name != ''">
+                and `name` like concat('%',#{name},'%')
+            </if>
+        </where>
+    </select>
+
+    <delete id="deleteUserById" parameterType="int">
+        delete from itcast.user where id=#{id} <!--根据id，删除用户  -->
+    </delete>
+
+    <select id="queryUserById" parameterType="int" resultType="wuhobin.pojo.User">
+        select * from itcast.user where  id=#{id} <!--根据id，查找用户  -->
+    </select>
+
+    <!--根据id，修改商品 -->
+    <update id="updateUser" parameterType="wuhobin.pojo.User">
+        update itcast.user
+        set name = #{name},password = #{password}
+        where id = #{id}
+    </update>
+    <!--添加商品 -->
+    <insert id="addUser" parameterType="wuhobin.pojo.User">
+        insert into itcast.user(name, password) values (#{name},#{password})
+    </insert>
+</mapper>
